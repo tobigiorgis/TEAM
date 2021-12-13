@@ -1,22 +1,22 @@
 // JavaScript
-// const nombre = document.getElementById("inputNom")
+const nombre = document.getElementById("inputNom")
 // localStorage.setItem("nombre", nombre.value);
-// const email = document.getElementById("inputEmail")
+const email = document.getElementById("inputEmail")
 // localStorage.setItem("email", email.value);
-// const password = document.getElementById("inputPassword")
+const password = document.getElementById("inputPassword")
 // localStorage.setItem("password", password.value);
-// const username = document.getElementById("inputUser")
+const username = document.getElementById("inputUser")
 // localStorage.setItem("username", username.value);
-// const age = document.getElementById("inputAge")
+const age = document.getElementById("inputAge")
 // localStorage.setItem("age", age.value);
-// const prof = document.getElementById("inputProf")
+const prof = document.getElementById("inputProf")
 // localStorage.setItem("profesion", prof.value);
-// const city = document.getElementById("inputCity")
+const city = document.getElementById("inputCity")
 // localStorage.setItem("city", city.value);
-// const country = document.getElementById("inputCountry")
+const country = document.getElementById("inputCountry")
 // localStorage.setItem("country", country.value);
-// const parrafo = document.getElementById("warnings")
-// const form = document.getElementById("formReg")
+const parrafo = document.getElementById("warnings")
+const form = document.getElementById("formReg")
 
 // Register form
 
@@ -97,28 +97,18 @@ const perfil = [
     {id: 3, nombre: "Francisco", apellido: "Giorgis", edad: 13}
 ]
 
-perfil.map((p) =>  {
-    const callPers = document.getElementById("listaPerf")
-    const itemPerf = document.createElement('li')
-    const createPerf = document.createTextNode(p.id)
-    itemPerf.appendChild(createPerf)
-    callPers.appendChild(itemPerf)
-})
-
-function mostrarPerfiles(value) {
-    const item = document.createElement('li');
-    const texto = document.createTextNode(value);
-    const lista = document.getElementById('listaPerf');
-
-item.appendChild(texto);
-lista.appendChild(item);
-}
+// perfil.map((p) =>  {
+//     const callPers = document.getElementById("listaPerf")
+//     const itemPerf = document.createElement('li')
+//     const createPerf = document.createTextNode(p.nombre)
+//     itemPerf.appendChild(createPerf)
+//     callPers.appendChild(itemPerf)
+// })
 
 perfil.forEach(elemento => {
-    $('.showPer').append(`<div><h3> ${elemento.nombre} + ${elemento.apellido}</h3>
-    <p>${elemento.edad}</p></div>`)
-}
-)
+    $('.showPer').append(`<div class="divPrueba"><h3 class="datos"> ${elemento.nombre}` + ` ${elemento.apellido}</h3>
+    <p class="uEdad">${elemento.edad}</p></div>`)
+})
 
 // Accepting cookies w animations
 
